@@ -14,7 +14,7 @@ The objective is to manouvre the players to capture the opponents flag and retur
 ### Teams
 - Two teams: Red and Blue
 - Each team has:
-    - A base node $b_R/b_B \in V$,
+    - A base node $b_R,b_B \in V$,
     - A flag,
     - One or more players.
 
@@ -44,11 +44,13 @@ In each turn, there will be several steps to follow:
 
 #### Flag capture/collision rules
 
-|-----------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| A player enters a node containing the opponent’s flag     | The player 'captures' the flag and begins carrying it, if the flag is not held already.   |
-| A player enters a node containing their own flag          | Nothing happens.                                                                          |
-| A player carrying a flag moves onto their own base node   | The player's team wins the game.                                                          |
-| A player carrying a flag is intercepted by the opponent   | The flag, held by the player whose turn it is not, is dropped and returned to its base.   |
+| Situation                                              | Result                                                                                   |
+|--------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| A player enters a node containing the opponent’s flag  | The player "captures" the flag and begins carrying it, if the flag is not held already.   |
+| A player enters a node containing their own flag        | Nothing happens.                                                                          |
+| A player carrying a flag moves onto their own base node | The player's team wins the game.                                                          |
+| A player carrying a flag is intercepted by the opponent | The flag, held by the player whose turn it is not, is dropped and returned to its base.   |
+
 
 #### Tagging
 If two players occupy the same node at the same time, a tag occurs.
