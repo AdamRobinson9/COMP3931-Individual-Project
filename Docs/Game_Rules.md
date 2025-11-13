@@ -49,14 +49,14 @@ In each turn, there will be several steps to follow:
 | A player enters a node containing the opponent’s flag  | The player "captures" the flag and begins carrying it, if the flag is not held already.   |
 | A player enters a node containing their own flag        | Nothing happens.                                                                          |
 | A player carrying a flag moves onto their own base node | The player's team wins the game.                                                          |
-| A player carrying a flag is intercepted by the opponent | The flag, held by the player whose turn it is not, is dropped and returned to its base.   |
+| A player carrying a flag is intercepted by the opponent | The flag, held by the player whose turn it is not, is dropped and returned to its base. Unless the carrier is in a safe zone (either base)  |
 
 
 #### Tagging
 If two players occupy the same node at the same time, a tag occurs.
 - If neither player is carring a flag, nothing happens.
 - If the player of the team whose turn it is carries a flag, the player will keep the flag.
-- If the player of the team whose turn it is not carries a flag, that flag will be dropped and returned to its base.
+- If the player of the team whose turn it is not carries a flag, that flag will be dropped and returned to its base. Unless the player is already in that base (safe zone).
 
 #### Winning conditions
 A team wins the game if:
